@@ -202,20 +202,8 @@ footer{
 .kulucka-navbar > li > a:hover{
     color: #000000;
 }
-.navbar-default .navbar-nav > li > a:focus,
-.dropdown-menu > li > a:focus{
-    color: #E87406;
-}
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:focus,
-.navbar-default .navbar-nav > .active > a:hover,
-.dropdown-menu > .active > a,
-.dropdown-menu > .active > a:focus,
-.dropdown-menu > .active > a:hover{
-    color: #E87406 !important;
-    font-weight: 900;
-    background: transparent;
-}
+
+
 
 
 
@@ -255,7 +243,8 @@ img.kulucka-logo{
 }
 
 section.kulucka-slider div.item{
-    height: 700px;
+ 
+    height: 647px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -690,7 +679,7 @@ section.kulucka-slider:hover .carousel-control{
     }
 
     section.kulucka-slider div.item{
-        height: 300px;
+        height: 200px;
     }
 
     section.kulucka-slider div.container{
