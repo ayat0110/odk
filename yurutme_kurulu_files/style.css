@@ -1,0 +1,788 @@
+/*
+*
+* 23.02.2018 v1.0
+*
+* Burak Demir
+* burakdemir@sdu.edu.tr
+* Suleyman Demirel Universitesi Bilgi Islem Daire Baskanligi
+*
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400%7CWork+Sans:300,400,500,600&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Bungee&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,500&subset=latin-ext');
+@import "font-awesome.min.css";
+
+
+
+body {
+    background: #ffffff;
+    font-family: "Work Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #4c4c4c;
+    position: relative;
+    min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Work Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #111111;
+    line-height: 1.2;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    letter-spacing: 0;
+    text-transform: uppercase;
+}
+
+h1 span,
+h2 span,
+h3 span,
+h4 span,
+h5 span,
+h6 span{
+    color: #E87406;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    outline: 0 !important;
+    outline-offset: 0 !important;
+}
+a:focus,
+a:hover {
+    outline: none;
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.btn {
+    font-size: 14px;
+}
+
+.main-color{
+    color: #E87406;
+}
+
+header,
+section,
+footer{
+    display: block;
+}
+
+.nav > li > a{
+    padding: 10px;
+}
+
+.btn-tumunu-goruntule {
+    display: block;
+    margin: 0 auto;
+    margin-top: 0px;
+    margin-top: 15px;
+    color: #ffffff;
+    background-color: #E87406;
+    border-color: #cc6606;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    font-size: 15px;
+}
+
+.span-tumunu-goruntule a {
+    margin: 0 auto;
+    color: #E87406;
+    font: 15px/25px "Work Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.btn-tumunu-goruntule:hover {
+    color: #ffffff;
+}
+
+.bg-grey {
+    background-color: #fafafa;
+}
+
+.pad-top-lg {
+    padding-top: 90px !important;
+}
+
+.pad-top-md {
+    padding-top: 70px !important;
+}
+
+.mar-bottom-md {
+    margin-bottom: 70px !important;
+}
+
+.mar-bottom-sm {
+    margin-bottom: 60px !important;
+}
+
+.mar-bottom-xs {
+    margin-bottom: 30px !important;
+}
+
+.pad-bottom-lg {
+    padding-bottom: 90px !important;
+}
+
+.pad-top-xs {
+    padding-top: 30px !important;
+}
+
+.mar-bottom-lg {
+    margin-bottom: 90px !important;
+}
+
+.kulucka-navbar{
+    padding: 15px 45px;
+    background-color: #3d3d3d;
+    margin-bottom: 0;
+    border: none;
+    border-radius: 0;
+}
+
+.kulucka-navbar .navbar-brand {
+    padding: 0;
+    margin-top: 5px;
+}
+
+.navbar-default .navbar-nav > li > a{
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.dropdown-menu > li > a,
+.dropdown-menu > li > a:hover{
+    text-transform: uppercase;
+    color: #000;
+}
+
+.kulucka-navbar > li > a:hover{
+    color: #ffffff;
+}
+.navbar-default .navbar-nav > li > a:focus,
+.dropdown-menu > li > a:focus{
+    color: #E87406;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover,
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:focus,
+.dropdown-menu > .active > a:hover{
+    color: #E87406 !important;
+    font-weight: 900;
+    background: transparent;
+}
+
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover{
+    color: #fff;
+}
+
+.navbar li a{
+    cursor: pointer;
+}
+
+img.kulucka-logo{
+    width: auto;
+    height: 50px;
+}
+
+#myCarousel .carousel-inner .item:before,
+#myCarousel .carousel-inner:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/pattern/pattern.png);
+    background-repeat: repeat;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.odk-nedir p{
+    font-weight: 400;
+    text-align: justify;
+}
+
+.odk-nedir p{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #4c4c4c !important;
+}
+
+section.kulucka-slider div.item{
+    height: 700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section.kulucka-slider div.container-fluid{
+    padding: 0;
+}
+
+.header-banner {
+    text-align: center;
+}
+.header-banner-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.header-banner span {
+    color: #ffffff;
+    display: block;
+    font-size: 30px;
+}
+
+.header-banner button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+    color: #ffffff;
+    background-color: #E87406;
+    border-color: #E87406;
+    -webkit-transition: all 0.5s; /* Safari */
+    transition: all 0.5s;
+    font-size: 15px;
+}
+
+.header-banner button:hover {
+    color: #ffffff;
+    background-color: #E87406;
+    border-color: #E87406;
+}
+
+.absolute-div {
+    position: absolute;
+    top: 50%;
+    right: 20%;
+    -ms-transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+}
+
+.absolute-div h3{
+    font-family: 'Bungee', cursive;
+    font-size: 40px;
+    line-height: 35px;
+    color: #FFF;
+}
+
+.absolute-div span{
+    font-size: 20px;
+}
+
+.kulucka-slider .col-md-12{
+    padding: 0;
+}
+
+.kulucka-slider .container-fluid{
+    padding: 0px 15px;
+}
+
+.kulucka-slider .row{
+    margin: 0;
+}
+
+.carousel-control {
+    display: none;
+}
+
+section.kulucka-slider:hover .carousel-control{
+    display: inline;
+}
+
+.main-heading {
+    font: 18px/28px "Work Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.main-heading .heading {
+    color: #363636;
+    margin: 0 0 23px;
+    letter-spacing: -1.5px;
+    font: 500 36px/47px "Work Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #E87406;font-weight: 500;font-family: 'Oswald', sans-serif;
+}
+
+.main-heading p {
+    margin: 0;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+
+}
+
+.icon-box.style2 {
+    font-size: 16px;
+    line-height: 26px;
+}
+.icon-box {
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.icon-box p {
+    margin: 0;
+    font-weight: lighter;
+    color: #999;
+}
+
+.icon-box.style2 .icon {
+    float: none;
+    display: block;
+    font-size: 60px;
+    margin: 0 0 20px;
+}
+.icon-box .icon {
+    float: left;
+    font-size: 50px;
+    margin: 13px 36px 0 0;
+}
+
+.icon-box .holder {
+    overflow: hidden;
+}
+
+.icon-box.style2 .title {
+    font-size: 22px;
+}
+
+.icon-box .title {
+    display: block;
+    color: #363636;
+    margin: 0 0 11px;
+    letter-spacing: -.8px;
+    font: 500 18px/38px "Work Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+}
+
+.kulucka-asamalar {
+    overflow: hidden;
+    padding-top: 10px;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.kulucka-asamalar .img-box {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 36.5%;
+    position: absolute;
+}
+
+.kulucka-asamalar .main-heading .heading {
+    font-size: 34px;
+}
+
+.bg-img-full {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.haber-item{
+    border-bottom: 1px solid #e5e5e5;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.haber-item div{
+    display: block;
+}
+
+.haber-item .baslik{
+    font: 400 16px "Work Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding-bottom: 10px;
+    transition: all 0.5s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.haber-item .baslik a,
+.haber-item .baslik a:focus{
+    text-decoration: none;
+    color: #4c4c4c;
+}
+
+.haber-item .baslik a:hover{
+    text-decoration: none;
+    color: #E87406;
+}
+
+.haber-item .baslik:hover{
+    color: #E87406;
+}
+
+.haber-item .kategori-zaman{
+    width: 100%;
+    color: #959595;
+    font: 300 13px "Work Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding-bottom: 15px;
+}
+
+.haber-item .icerik{
+    width: 100%;
+    margin-left: 30px;
+    padding-right: 30px;
+}
+
+.haber-item .icerik-icon{
+    float: left;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #E87406;
+    padding-top: 10px;
+}
+
+.kulucka-haber-duyuru .row{
+    margin: 0;
+}
+
+.kulucka-footer{
+    background: #1a2139;
+    padding: 25px 0;
+    font: 400 13px "Work Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #ffffff;
+}
+
+.kulucka-footer .sosyal ul li{
+    padding: 0 23px 0 0;
+}
+
+.kulucka-footer .sosyal a {
+    color: #ffffff;
+    -webkit-transition: all ease .3s;
+    transition: all ease .3s;
+}
+
+.sayfa-alani{
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 115px;
+}
+
+.sayfa-alani h1,
+.sayfa-alani h2,
+.sayfa-alani h3,
+.sayfa-alani h4,
+.sayfa-alani h5,
+.sayfa-alani h6 {
+    padding: 5px 0;
+}
+
+.sayfa-col{
+    padding-top: 30px;
+}
+
+.sayfa-col label{
+    font: 500 13px "Work Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.harita-alani{
+    padding-top: 85px;
+}
+
+.harita-alani .harita{
+    width: 100%;
+    height: 300px;
+}
+
+.harita-alani .container-fluid .col-lg-12{
+    padding: 0;
+}
+
+.iletisim-alani{
+    padding-top: 20px;
+}
+
+.iletisim-infobox {
+    padding: 50px 30px;
+    background: #f3f3f3;
+    border-radius: 10px;
+}
+.iletisim-col {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.iletisim-infobox i {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #E87406;
+    color: #E87406;
+    text-align: center;
+    font-size: 24px;
+    line-height: 45px;
+    margin-bottom: 20px;
+    padding: 5px 15px;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.konusmaci-col{
+    margin-bottom: 30px;
+    background: #466076;
+    padding: 20px 20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.konusmaci-box{
+    text-align: center;
+    position: relative;
+}
+
+.konusmaci-box .pic{
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+.konusmaci-box .pic::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: scale(1.2);
+    transition: all 0.3s linear 0s;
+}
+
+.konusmaci-box .pic img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+.konusmaci-bilgi {
+    text-align: center;
+    background: #e67e22;
+    padding: 15px 15px;
+    margin-top: 25px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    height: 70px;
+}
+
+.konusmaci-bilgi h5 {
+    color: #ffffff;
+    margin-bottom: 0px;
+    text-transform: none;
+    font-family: "Work Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /*margin-bottom: 5px;*/
+}
+
+.konusmaci-bilgi span {
+    text-transform: capitalize;
+    color: #f8f8f8;
+    font-size: 12px;
+}
+
+@media (max-width: 768px) {
+    .kulucka-navbar{
+        padding: 10px 10px 0 10px;
+    }
+
+    .kulucka-navbar .navbar-collapse{
+        border: none;
+    }
+
+    .kulucka-navbar .navbar-toggle{
+        margin-right: 0;
+        padding: 5px 6px;
+    }
+
+    .dropdown-menu > li > a,
+    .dropdown-menu > li > a:hover{
+        text-transform: uppercase;
+        color: #fff;
+    }
+
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a{
+        color: #ffffff;
+    }
+
+    img.kulucka-logo{
+        width: auto;
+        height: 40px;
+    }
+
+    section.kulucka-slider div.item{
+        height: 300px;
+    }
+
+    section.kulucka-slider div.container{
+        width: 100%;
+        padding: 30px;
+    }
+
+    .header-banner span {
+        font-size: 18px;
+    }
+
+    .header-banner button {
+        font-size: 10px;
+    }
+
+    .kulucka-asamalar:before{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 0;
+        width: 100%;
+        height: 100%;
+        background: url(../images/pattern/pattern.png);
+        background-repeat: repeat;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .kulucka-asamalar{
+        background-image: url(../images/kulucka-programlar.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .kulucka-asamalar .main-heading{
+        text-align: center;
+    }
+
+    .kulucka-asamalar .main-heading .heading,
+    .kulucka-asamalar .main-heading p,
+    .kulucka-asamalar .holder .title,
+    .kulucka-asamalar .holder p
+    {
+        color: #fff;
+    }
+
+    .haber-item{
+        text-align: justify;
+    }
+
+    .kulucka-footer{
+        text-align: center;
+    }
+
+    .kulucka-footer .telif{
+        padding-bottom: 15px;
+    }
+
+}
+
+@media (max-width: 991.98px) {
+    .sayfa-alani{
+        padding-top: 10px;
+    }
+
+    .harita-alani{
+        padding-top: 0px;
+    }
+
+    .absolute-div {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .absolute-div h3 {
+        font-size: 30px;
+    }
+
+    .absolute-div span {
+        font-size: 15px;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .kulucka-navbar{
+        background-color: transparent;
+        position: absolute;
+        top: 0;
+        z-index: 1001;
+        width: 100%;
+    }
+
+    img.kulucka-logo{
+        margin-top: -8px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+}
