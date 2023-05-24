@@ -163,6 +163,7 @@ footer{
     margin-bottom: 0;
     border: none;
     border-radius: 0;
+    max-width: 2000px;
 }
 
 .kulucka-navbar .navbar-brand {
@@ -248,10 +249,12 @@ section.kulucka-slider div.item{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+  
 }
 
 section.kulucka-slider div.container-fluid{
     padding: 0;
+  
 }
 
 .header-banner {
@@ -592,7 +595,7 @@ section.kulucka-slider:hover .carousel-control{
 
 .konusmaci-box .pic{
    
-    border-radius: 50%;
+  
     overflow: hidden;
     position: relative;
 }
@@ -618,11 +621,11 @@ section.kulucka-slider:hover .carousel-control{
 .konusmaci-box .pic img{
     width: 100%;
     height: auto;
-    border-radius: 50%;
+    border-radius: 2%;
 }
 .konusmaci-bilgi {
     text-align: center;
-    background: #801E2C;
+
     padding: 15px 15px;
     margin-top: 25px;
     -webkit-border-radius: 5px;
@@ -758,6 +761,16 @@ section.kulucka-slider:hover .carousel-control{
         transform: translate(-50%, -50%);
         text-align: center;
     }
+    .cal-position {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .calendar {
+        
+        margin-bottom: 1em;
+    }
 
     .absolute-div h3 {
         font-size: 30px;
@@ -845,4 +858,61 @@ section.kulucka-slider:hover .carousel-control{
 .sosyalmedya a:hover>i {
     transform: scale(1.5) rotate(360deg);
 
+}
+.calendar {
+    position: relative;
+    width: 260px;
+     margin-left: 1em;
+}
+
+
+
+.calendar .calendar-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-bottom: 6px solid #5EB8C2;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 5px 25px rgb(1 1 1 / 15%);
+}
+
+.calendar .calendar-body .month-name {
+    color: #ffffff;
+    background: #5EB8C2;
+    width: 100%;
+    font-size: 1.6em;
+    text-align: center;
+    font-weight: 400;
+    padding: 5px 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.calendar .calendar-body .day-name {
+    color: #000000;
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.calendar .calendar-body .date-number {
+    color: #000000;
+    font-size: 6em;
+    font-weight: 600;
+    line-height: 1.2em;
+}
+
+.calendar .calendar-body .year {
+    color: #000000;
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.cal-position{
+    display: flex;
+   
 }
