@@ -673,7 +673,7 @@ section.kulucka-slider:hover .carousel-control{
     .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,
     .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
     .navbar-default .navbar-nav .open .dropdown-menu > li > a{
-        color: #ffffff;
+        color: #000000;
     }
 
     img.kulucka-logo{
