@@ -181,6 +181,8 @@ footer{
 .dropdown-menu > li > a:hover{
     text-transform: uppercase;
     color: #000;
+    background: white;
+    opacity: unset !important;
 }
 .underline:after {
     background: none repeat scroll 0 0 transparent;
@@ -915,4 +917,12 @@ section.kulucka-slider:hover .carousel-control{
 .cal-position{
     display: flex;
    
+}
+.navbar.navbar-default {
+    background-color: #EEEEEE8F;
+
+}
+
+.custom-dropdown {
+    background-color: white !important;
 }
