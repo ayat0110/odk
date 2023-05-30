@@ -33,7 +33,7 @@ h6 {
     margin-bottom: 10px;
     padding: 0;
     letter-spacing: 0;
-    text-transform: uppercase;
+   
 }
 
 h1 span,
@@ -533,6 +533,20 @@ section.kulucka-slider:hover .carousel-control{
       display: flex;
       align-items: center;
   }
+      .centered-div {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          height: 100vh;
+      }
+
+      .align-items-center {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      }
+
 .sayfa-col label{
     font: 500 13px "Work Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
