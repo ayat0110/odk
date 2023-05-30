@@ -756,6 +756,9 @@ section.kulucka-slider:hover .carousel-control{
 }
 
 @media (max-width: 991.98px) {
+    .text-len{
+        width: 60%;
+    }
     .sayfa-alani{
         padding-top: 10px;
     }
@@ -974,7 +977,7 @@ section.kulucka-slider:hover .carousel-control{
 /* slideshow item */
 .slideshow--item {
    width: 100%;
-  height: 783px;
+ height: auto;
     line-height: 1.5;
     position: absolute;
     top: 0;
@@ -1143,5 +1146,16 @@ section.kulucka-slider:hover .carousel-control{
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
     .kulucka-slider {
        height: 537px;
+    }
+}
+@media screen and (min-width: 1605px) and (max-width: 2000px) {
+    .slideshow--item img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+@media screen and (min-width: 1630px) and (max-width: 2000px) {
+    .kulucka-slider {
+        height: 967px;
     }
 }
