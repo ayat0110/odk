@@ -529,7 +529,10 @@ section.kulucka-slider:hover .carousel-control{
 .sayfa-col{
     padding-top: 30px;
 }
-
+  .align-items-center {
+      display: flex;
+      align-items: center;
+  }
 .sayfa-col label{
     font: 500 13px "Work Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
